@@ -5,6 +5,7 @@ go 1.21
 require (
 	github.com/cloudflare/cloudflare-go v0.84.0
 	github.com/go-resty/resty/v2 v2.11.0
+	github.com/go-telegram-bot-api/telegram-bot-api/v5 v5.5.1
 )
 
 require (

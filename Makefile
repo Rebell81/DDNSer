@@ -1,7 +1,7 @@
 .PHONY: build
 build:
 	go build
-	docker build -t ghcr.io/rebell81/ddnser:0.1 -t ghcr.io/rebell81/ddnser:latest --platform linux/arm64 --no-cache .
+	docker build -t ghcr.io/rebell81/ddnser:0.2 -t ghcr.io/rebell81/ddnser:latest --platform linux/arm64 --no-cache .
 .PHONY: push
 push:
 	docker push ghcr.io/rebell81/ddnser --all-tags
