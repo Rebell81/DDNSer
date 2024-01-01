@@ -1,0 +1,13 @@
+version: "2.1"
+services:
+  DDNSer:
+    image: ghcr.io/rebell81/ddnser:latest
+    container_name: DDNSer
+    environment:
+      - CLOUDFLARE_TOKEN=
+      - CLOUDFLARE_ZON_ID=
+      - KEENETIC_HOST=
+      - LOGIN=
+      - PASSWORD=
+    restart: always
+    network_mode: "host"
