@@ -1,3 +1,5 @@
+[![Go](https://github.com/Rebell81/DDNSer/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/Rebell81/DDNSer/actions/workflows/go.yml)
+
 # small tool to update cloudflare DNS records based on received IP from ISP for Keenetic router
 
 env
