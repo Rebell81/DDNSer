@@ -48,6 +48,7 @@ func main() {
 		fmt.Println(err)
 	}
 
+	fmt.Println("start cycle....")
 	for {
 		interfaces, err := keeneticClient.GetSingle("PPPoE1")
 		if err != nil {
@@ -58,7 +59,7 @@ func main() {
 			cloudFlareRecord := list[0]
 			byflyInterface := &interfaces[0]
 
-			log.Println(fmt.Sprintf("Cloud ip: '%s'		| Keen ip: '%s'", cloudFlareRecord.Content, byflyInterface.Address))
+			//log.Println(fmt.Sprintf("Cloud ip: '%s'		| Keen ip: '%s'", cloudFlareRecord.Content, byflyInterface.Address))
 
 			if cloudFlareRecord.Content != byflyInterface.Address && byflyInterface.Address != "" {
 				log.Println(fmt.Sprintf("'%s'			==============>			'%s'", cloudFlareRecord.Content, byflyInterface.Address))
